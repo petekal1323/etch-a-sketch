@@ -1,69 +1,67 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: grid;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    background: url(https://s3.amazonaws.com/media.locally.net/original/HABA_ALT_2017-08-02-13-22-45.jpg) bottom;
-    background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  background: url(https://s3.amazonaws.com/media.locally.net/original/HABA_ALT_2017-08-02-13-22-45.jpg) bottom;
+  background-size: cover;
 }
 
 canvas {
-    border: 20px solid #e80000;
-    border-radius: 10px;
-    width: 800px;
-    height: 500px;
-    background: white;
+  border: 20px solid #e80000;
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  background: white;
 
-    .shake {
-        animation: shake 0.5s linear 1;
-    }
+  &.shake {
+    animation: shake 0.5s linear 1;
+  }
 }
 
 @keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
 
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
 
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
-
 @media all and (max-width: 850px) {
-    #etch-a-sketch {
-        width: 700px;
-        height: 500px;
-    }
+  #etch-a-sketch {
+    width: 700px;
+    height: 500px;
+  }
 }
 
 @media all and (max-width: 720px) {
-    #etch-a-sketch {
-        width: 95%;
-        height: 500px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  #etch-a-sketch {
+    width: 95%;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
