@@ -16,7 +16,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   background: white;
-  background: url(https://s3.amazonaws.com/media.locally.net/original/HABA_ALT_2017-08-02-13-22-45.jpg) bottom;
+  background: url(./img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg) bottom;
   background-size: cover;
 }
 
@@ -31,6 +31,11 @@ canvas {
 canvas.shake {
   -webkit-animation: shake 0.5s linear 1;
   animation: shake 0.5s linear 1;
+}
+
+footer {
+  font-size: 9px;
+  color: white;
 }
 
 @-webkit-keyframes shake {
